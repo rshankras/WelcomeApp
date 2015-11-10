@@ -12,7 +12,6 @@
 		48A263AF1AF09320009E0C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A263AD1AF09320009E0C13 /* Main.storyboard */; };
 		48A263B11AF09320009E0C13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A263B01AF09320009E0C13 /* Images.xcassets */; };
 		48A263B41AF09320009E0C13 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A263B21AF09320009E0C13 /* LaunchScreen.xib */; };
-		48A263C01AF09321009E0C13 /* WelcomeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A263BF1AF09321009E0C13 /* WelcomeAppTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +34,6 @@
 		48A263B31AF09320009E0C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		48A263B91AF09321009E0C13 /* WelcomeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WelcomeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A263BE1AF09321009E0C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48A263BF1AF09321009E0C13 /* WelcomeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeAppTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 		48A263BC1AF09321009E0C13 /* WelcomeAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				48A263BF1AF09321009E0C13 /* WelcomeAppTests.swift */,
 				48A263BD1AF09321009E0C13 /* Supporting Files */,
 			);
 			path = WelcomeAppTests;
@@ -156,7 +153,8 @@
 		48A2639C1AF09320009E0C13 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Ravi Shankar";
 				TargetAttributes = {
 					48A263A31AF09320009E0C13 = {
@@ -221,7 +219,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A263C01AF09321009E0C13 /* WelcomeAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +273,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -344,6 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WelcomeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rshankar.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -354,6 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WelcomeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rshankar.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -372,6 +372,7 @@
 				);
 				INFOPLIST_FILE = WelcomeAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rshankar.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WelcomeApp.app/WelcomeApp";
 			};
@@ -387,6 +388,7 @@
 				);
 				INFOPLIST_FILE = WelcomeAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rshankar.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WelcomeApp.app/WelcomeApp";
 			};
@@ -411,6 +413,7 @@
 				48A263C51AF09321009E0C13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48A263C61AF09321009E0C13 /* Build configuration list for PBXNativeTarget "WelcomeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +422,7 @@
 				48A263C81AF09321009E0C13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

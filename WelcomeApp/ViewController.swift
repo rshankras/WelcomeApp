@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let dict: Dictionary = ["name":"Satya","MPhone":32232332]
+        let dict1: NSDictionary = ["name":"Satya","MPhone":32232332]
+        
+        print(dict)
+        print(dict1)
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,6 +32,7 @@ class ViewController: UIViewController {
 
     @IBAction func displayMessage(sender: UIButton) {
         loadLabels()
+        
         
         UIView.animateWithDuration(10, delay: 0.5, options: UIViewAnimationOptions.CurveEaseIn, animations: {
             
@@ -38,6 +44,10 @@ class ViewController: UIViewController {
                     // do nothing
                 }
         })
+    }
+    
+    @IBAction func callDemo(sender: UIButton) {
+        print("Demo button clicked" +  (sender.titleLabel?.text)!)
     }
     
     // MARK:- Create labels
