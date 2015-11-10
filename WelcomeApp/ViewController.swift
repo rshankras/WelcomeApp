@@ -18,12 +18,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let dict: Dictionary = ["name":"Satya","MPhone":32232332]
-        let dict1: NSDictionary = ["name":"Satya","MPhone":32232332]
-        
-        print(dict)
-        print(dict1)
     }
 
     override func didReceiveMemoryWarning() {

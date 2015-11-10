@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4837DACE1BF1F6D900CBA1F8 /* WelcomeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4837DACD1BF1F6D900CBA1F8 /* WelcomeAppTests.swift */; };
 		48A263AA1AF09320009E0C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A263A91AF09320009E0C13 /* AppDelegate.swift */; };
 		48A263AC1AF09320009E0C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A263AB1AF09320009E0C13 /* ViewController.swift */; };
 		48A263AF1AF09320009E0C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A263AD1AF09320009E0C13 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4837DACD1BF1F6D900CBA1F8 /* WelcomeAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeAppTests.swift; sourceTree = "<group>"; };
 		48A263A41AF09320009E0C13 /* WelcomeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WelcomeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A263A81AF09320009E0C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48A263A91AF09320009E0C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		48A263BC1AF09321009E0C13 /* WelcomeAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				4837DACD1BF1F6D900CBA1F8 /* WelcomeAppTests.swift */,
 				48A263BD1AF09321009E0C13 /* Supporting Files */,
 			);
 			path = WelcomeAppTests;
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4837DACE1BF1F6D900CBA1F8 /* WelcomeAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,10 +366,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -374,6 +376,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rshankar.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WelcomeApp.app/WelcomeApp";
 			};
 			name = Debug;
@@ -382,10 +385,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = WelcomeAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rshankar.$(PRODUCT_NAME:rfc1034identifier)";
